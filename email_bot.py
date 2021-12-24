@@ -9,7 +9,7 @@ def close():
 
 def Window():
     root.geometry("450x300")
-    root.title("Zacky2613's Email Bot")
+    root.title("Zacky2613's Email Sender.")
 
     bot_label = tk.Label(root, text="Welcome User to Dark Matter's Custom Email Bot.")
     bot_label.pack(side = "top", anchor = "nw")
@@ -71,9 +71,9 @@ def Window():
             label_valuerror.pack(side="left", anchor="se")
 
 
-        sender_email = 'EQ.email.sender@gmail.com'
-        sender_password = 'lol'
-    
+        sender_email = '' # Put email address here. 
+        sender_password = '' # Put email password here.
+     
         for x in range(email_amount):
             try:
                 server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -94,7 +94,7 @@ def Window():
 
             server.ehlo()
             server.starttls()
-            server.login(sender_email, sender_password)
+            server.login(sender_email, sender_password) # Logs in with your email.
 
 
             message = 'Subject: {}\n\n{}'.format(email_subject, email_text)
