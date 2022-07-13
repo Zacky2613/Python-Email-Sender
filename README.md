@@ -1,2 +1,7 @@
 # Python-Email-Sender
-Python Email Sender (PES) is a program made with Python using smtplib, socket and tkinter. This program was made for sender email to be a gmail account because that's what I used when testing it out, to make it work for a gmail account turn off secure app and then put in your email and password into the right variables and the program should be good to run!
+Python Email Sender is a simple email sending that uses stmplib, socket for the email part and tkinter for the gui, it only works with gmail and can only send a subject and body text. If you would like to expand upon this feel free to fork it.
+
+# Instructions 
+1. Go into your account and turn off secure app access
+2. Put your username and password in the variables.
+3. Run it!
